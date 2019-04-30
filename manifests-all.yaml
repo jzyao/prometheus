@@ -2510,9 +2510,9 @@ data:
 
       # https://github.com/prometheus/prometheus/blob/master/documentation/examples/prometheus-kubernetes.yml#L119
       - job_name: 'kubernetes-services'
-        metrics_path: /probe
-        params:
-          module: [http_2xx]
+       # metrics_path: /probe
+       # params:
+       #   module: [http_2xx]
         kubernetes_sd_configs:
           - role: service
         relabel_configs:
